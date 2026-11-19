@@ -10,9 +10,14 @@ Is it down, or is it just you? Live outage status for 110+ apps, AI APIs and clo
 | Tool | What it does |
 |---|---|
 | `get_status(slug)` | One service's current verdict (up / degraded / down) with the official status text and our probe result |
-| `list_services(category?)` | Discover service slugs |
+| `list_services(query?, category?)` | Find a service by name, or discover slugs |
 | `check_stack(slugs[])` | Check several dependencies at once; returns an overall verdict and `ready` true/false |
-| `create_alert_stack(services, webhook_url?, email?, …)` | Get outage alerts by webhook, Slack, Discord or email |
+| `create_alert_stack(services, webhook_url?, email?, …)` | Get outage alerts by webhook, Slack, Discord or email. Returns a private manage_link once |
+| `get_alert_stack(stack_id, token)` | Read a stack: services, live status, channels, recent deliveries |
+| `update_alert_stack(stack_id, token, …)` | Add or remove services, or add an email or webhook |
+| `send_test_alert(stack_id, token)` | Send a sample alert to every active channel |
+| `rotate_alert_stack_key(stack_id, token)` | Issue a new manage link; the old token and link stop working immediately |
+| `delete_alert_stack(stack_id, token)` | Delete a stack and stop its alerts |
 | `list_incidents(slug)` | Recent incidents and verdict changes |
 
 ## Connect
