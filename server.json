@@ -3,7 +3,7 @@
   "name": "io.github.jacobpmiller/whatsdownnow",
   "title": "WhatsDownNow",
   "description": "Live outage status and alerts for 250 apps, AI APIs, and cloud services. No auth.",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "websiteUrl": "https://whatsdownnow.com/developers",
   "repository": {
     "url": "https://github.com/jacobpmiller/whatsdownnow-mcp",

@@ -19,6 +19,7 @@ Is it down, or is it just you? Live outage status for 250 apps, AI APIs and clou
 | `rotate_alert_stack_key(stack_id, token)` | Issue a new manage link; the old token and link stop working immediately |
 | `delete_alert_stack(stack_id, token)` | Delete a stack and stop its alerts |
 | `list_incidents(slug)` | Recent incidents and verdict changes |
+| `request_service(name, url?, reason?)` | Ask us to start monitoring a service that is not in the catalog yet |
 
 ## Connect
 ```json
