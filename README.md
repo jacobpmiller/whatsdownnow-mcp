@@ -1,6 +1,6 @@
 # WhatsDownNow MCP server
 
-Is it down, or is it just you? Live outage status for 110+ apps, AI APIs and cloud services, over MCP.
+Is it down, or is it just you? Live outage status for 210+ apps, AI APIs and cloud services, over MCP.
 
 - Endpoint (Streamable HTTP, no auth): `https://whatsdownnow.com/mcp`
 - Docs: https://whatsdownnow.com/developers · OpenAPI: https://whatsdownnow.com/openapi.json
@@ -26,7 +26,7 @@ Is it down, or is it just you? Live outage status for 110+ apps, AI APIs and clo
 ```
 Claude Code: `claude mcp add --transport http whatsdownnow https://whatsdownnow.com/mcp`
 
-Verdicts combine official status pages with our own HTTP checks about every 10 minutes. Service names belong to their owners; WhatsDownNow is not affiliated with them. The server code is closed source; this repo holds the public listing metadata.
+Verdicts combine official status pages with our own HTTP checks about every 11 minutes. Service names belong to their owners; WhatsDownNow is not affiliated with them. The server code is closed source; this repo holds the public listing metadata.
 
 ## Status badges
 
