@@ -1,0 +1,10 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.whatsdownnow/status",
+  "title": "WhatsDownNow",
+  "description": "Live outage status for 110+ apps, AI APIs and cloud services, plus outage alerts. No auth.",
+  "version": "1.0.0",
+  "websiteUrl": "https://whatsdownnow.com/developers",
+  "icons": [{ "src": "https://whatsdownnow.com/logo.png", "mimeType": "image/png", "sizes": ["512x512"] }],
+  "remotes": [{ "type": "streamable-http", "url": "https://whatsdownnow.com/mcp" }]
+}
