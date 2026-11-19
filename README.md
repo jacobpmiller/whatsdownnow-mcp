@@ -1,6 +1,6 @@
 # WhatsDownNow MCP server
 
-Is it down, or is it just you? Live outage status for 250 apps, AI APIs and cloud services, over MCP.
+Is it down, or is it just you? Live outage status for 250 apps, AI APIs and cloud services, over MCP. Includes healthy AI provider fallbacks and a way for agents to report errors they hit.
 
 - Endpoint (Streamable HTTP, no auth): `https://whatsdownnow.com/mcp`
 - Docs: https://whatsdownnow.com/developers · OpenAPI: https://whatsdownnow.com/openapi.json
@@ -20,11 +20,21 @@ Is it down, or is it just you? Live outage status for 250 apps, AI APIs and clou
 | `delete_alert_stack(stack_id, token)` | Delete a stack and stop its alerts |
 | `list_incidents(slug)` | Recent incidents and verdict changes |
 | `request_service(name, url?, reason?)` | Ask us to start monitoring a service that is not in the catalog yet |
+| `get_ai_fallback(provider?)` | Healthy alternatives when an AI API is down, or the whole board if you omit provider |
+| `report_issue(service, error_type, model?, region?)` | Report a 5xx, timeout or rate limit your agent just hit |
+
+AI board: https://whatsdownnow.com/ai · `GET https://whatsdownnow.com/api/v1/ai/health`
 
 ## Connect
 ```json
 { "mcpServers": { "whatsdownnow": { "url": "https://whatsdownnow.com/mcp" } } }
 ```
+Cursor (`~/.cursor/mcp.json`) and Claude Desktop use the JSON above. VS Code (`.vscode/mcp.json`):
+
+```json
+{ "servers": { "whatsdownnow": { "type": "http", "url": "https://whatsdownnow.com/mcp" } } }
+```
+
 Claude Code: `claude mcp add --transport http whatsdownnow https://whatsdownnow.com/mcp`
 
 Verdicts combine official status pages with our own HTTP checks about every 11 minutes. Service names belong to their owners; WhatsDownNow is not affiliated with them. The server code is closed source; this repo holds the public listing metadata.
