@@ -2,7 +2,7 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.jacobpmiller/whatsdownnow",
   "title": "WhatsDownNow",
-  "description": "Live outage status, AI provider fallbacks, and alerts for 250 apps, AI APIs, and cloud services. No auth.",
+  "description": "Live outage status, AI fallbacks, and alerts for 250 apps, AI APIs, and cloud services. No auth.",
   "version": "1.4.0",
   "websiteUrl": "https://whatsdownnow.com/developers",
   "repository": {
@@ -13,7 +13,9 @@
     {
       "src": "https://whatsdownnow.com/logo.png",
       "mimeType": "image/png",
-      "sizes": ["512x512"]
+      "sizes": [
+        "512x512"
+      ]
     }
   ],
   "remotes": [
