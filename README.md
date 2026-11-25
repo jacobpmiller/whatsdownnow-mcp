@@ -1,6 +1,8 @@
 # WhatsDownNow MCP server
 
-Is it down, or is it just you? Live outage status for 250 apps, AI APIs and cloud services, over MCP. Includes healthy AI provider fallbacks and a way for agents to report errors they hit.
+[![WhatsDownNow MCP connector](https://glama.ai/mcp/connectors/io.github.jacobpmiller/whatsdownnow/badges/score.svg)](https://glama.ai/mcp/connectors/io.github.jacobpmiller/whatsdownnow)
+
+Is it down, or is it just you? Live outage status for 280 apps, AI APIs and cloud services, over MCP. Includes healthy AI provider fallbacks and a way for agents to report errors they hit.
 
 - Endpoint (Streamable HTTP, no auth): `https://whatsdownnow.com/mcp`
 - Docs: https://whatsdownnow.com/developers · OpenAPI: https://whatsdownnow.com/openapi.json
